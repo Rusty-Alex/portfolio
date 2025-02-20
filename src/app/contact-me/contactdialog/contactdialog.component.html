@@ -1,0 +1,25 @@
+@if(sendMessageTrue){
+<div class="contactdialog">
+
+    @if(mainVariableService.activeEN){
+    <p>Thank you for your message!</p>
+    }@else {
+    <p>Danke für Ihre Nachricht!</p>
+    }
+    <img src="./img/closeDialog.png" (click)="closeDialog()" alt="closeDialog">
+
+</div>
+}@else {
+
+<div class="contactdialog">
+    <img src="./img/closeDialog.png" (click)="closeDialog()" alt="closeDialog">
+    @if(mainVariableService.activeEN){
+    <p>Your message could not be sent !</p>
+    }@else {
+    <p>Ihre Nachricht konnte nicht gesendet werden!</p>
+    }
+
+
+</div>
+
+}

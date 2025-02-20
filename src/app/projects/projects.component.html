@@ -1,0 +1,105 @@
+<div class="projects">
+    <section class="header">
+        <div class="project-main-content">
+            <div class="project-title">
+                <p>Portfolio</p>
+                @if(mainVariableService.activeEN){
+                <p>Featured Projects</p>
+                }@else {
+                <p>Ausgewählte Projekte</p>
+                }
+            </div>
+            @if(mainVariableService.activeEN){
+            <p class="project-info">Explore a selection of my work here - Interact with projects to see my skills in
+                action.</p>
+            }@else {
+            <p class="project-info">Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um
+                meine Fähigkeiten in
+                Aktion zu sehen.</p>
+            }
+
+            <div class="project-content">
+                <div class="project-content-area">
+                    <div class="project-join" (mouseenter)="hoverProjectJoin = true"
+                        (mouseleave)="hoverProjectJoin = false" (click)="openProjects(0)">
+                        <div class="project-join-title" >
+                            <p>Join</p>@if(hoverProjectJoin){<img src="./img/arrowUpProject.png" alt="">}
+                        </div>
+                        <div class="project-join-info">
+                            <p>HTML</p>
+                            <p>|</p>
+                            <p>CSS</p>
+                            <p>|</p>
+                            <p>JavaScript</p>
+                            <p>|</p>
+                            <p>Firebase</p>
+                        </div>
+                    </div>
+                    <div class="project-epl" (mouseenter)="hoverProjectEPL= true"
+                        (mouseleave)="hoverProjectEPL = false" (click)="openProjects(1)">
+                        <div class="project-join-title">
+                            <p>El Pollo Loco</p>@if(hoverProjectEPL){<img src="./img/arrowUpProject.png" alt="">}
+                        </div>
+                        <div class="project-join-info">
+                            <p>HTML</p>
+                            <p>|</p>
+                            <p>CSS</p>
+                            <p>|</p>
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="project-dabubble" (mouseenter)="hoverProjectDabubble= true"
+                        (mouseleave)="hoverProjectDabubble = false" (click)="openProjects(2)">
+                        <div class="project-join-title">
+                            <p>Da Bubble</p>@if(hoverProjectDabubble){<img src="./img/arrowUpProject.png" alt="">}
+                        </div>
+                        <div class="project-join-info">
+                            <p>HTML</p>
+                            <p>|</p>
+                            <p>CSS</p>
+                            <p>|</p>
+                            <p>TypeScript</p>
+                            <p>|</p>
+                            <p>Angular</p>
+                            <p>|</p>
+                            <p>Firebase</p>
+                        </div>
+                    </div>
+                    <div class="project-son" (mouseenter)="hoverProjectSon = true"
+                        (mouseleave)="hoverProjectSon = false" (click)="openProjects(3)">
+                        <div class="project-join-title">
+                            <p>Sonnenschein</p>@if(hoverProjectSon){<img src="./img/arrowUpProject.png" alt="">}
+                        </div>
+                        <div class="project-join-info">
+                            <p>HTML</p>
+                            <p>|</p>
+                            <p>CSS</p>
+                            <p>|</p>
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        @if(!mainVariableService.hoverProjecScreen){
+        <div class="project-content-area-img">
+
+            @if(hoverProjectJoin){
+            <img class="project-pic pic-1" src="./img/join.png" alt="">
+            }
+            @if(hoverProjectEPL){
+            <img class="project-pic pic-2" src="./img/epl.png" alt="">
+            }
+            @if(hoverProjectDabubble){
+            <img class="project-pic pic-3" src="./img/dabubble.png" alt="">
+            }
+            @if(hoverProjectSon){
+            <div class="sonn-Pic pic-4"><img src="./img/sonn.png" alt=""> <img src="./img/Capa_1.png" alt=""></div>
+            }
+        </div>
+        }
+    </section>
+</div>

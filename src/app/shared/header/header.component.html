@@ -1,0 +1,120 @@
+<section class="header">
+    <div class="container">
+        <app-nav></app-nav>
+        @if(mainVariableService.activeEN){
+        <div class="header-text">
+            <div class="header-text-main">
+                <p>Frontend Developer</p>
+                <div class="header-text-secend">
+                    <p>Alexander Winkler</p>
+                    <div  [class]="mainVariableService.isMediumScreen ? 'btn-header-small-screen' : 'btn-header'">
+                        <a (click)="mainVariableService.scrollTo('projects')"><span>Check my work</span></a>
+                        <a (click)="mainVariableService.scrollTo('contact')"><span>Contact me</span> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-left-line">
+                <div><img src="./img/arrow.png" alt=""></div>
+                <div></div>
+            </div>
+            <div class="header-right-line">
+                @if(mainVariableService.isSmallScreen){
+                    <a [class.mail-Active]="mainVariableService.isSmallScreen" href="mailto:alexwinkler.dev@gmail.com"><img src="./img/mailHover.png" alt=""></a>
+                }@else {
+                    <a class="mail" href="mailto:alexwinkler.dev@gmail.com">alexwinkler.dev&#64;gmail.com</a>
+                }
+                
+                <div>
+                    <a href="https://linkedin.com/in/alexander-winkler-455937314"><img src="./img/Linkedin.png" alt=""></a>
+                    <a href="https://github.com/Rusty-Alex"><img src="./img/Github.png" alt=""></a>
+                </div>
+                <div></div>
+            </div>
+        </div>
+        }@else {
+        <div class="header-text">
+            <div class="header-text-main">
+                <p>Frontend Entwickler</p>
+                <div class="header-text-secend">
+                    <p>Alexander Winkler</p>
+                    <div [class]="mainVariableService.isMediumScreen ? 'btn-header-small-screen' : 'btn-header'">
+                        <a (click)="mainVariableService.scrollTo('projects')"><span>Prüfe meine Arbeit</span></a>
+                        <a (click)="mainVariableService.scrollTo('contact')"><span>Kontaktiere mich</span> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-left-line">
+                <div><img src="./img/arrow.png" alt=""></div>
+                <div></div>
+            </div>
+
+            <div class="header-right-line">
+
+                @if(mainVariableService.isSmallScreen){
+                    <a [class.mail-Active]="mainVariableService.isSmallScreen" href="mailto:alexwinkler.dev@gmail.com"><img src="./img/mailHover.png" alt=""></a>
+                }@else {
+                    <a class="mail"  href="mailto:alexwinkler.dev@gmail.com">alexwinkler.dev&#64;gmail.com</a>
+                }
+                
+                <div>
+                    <a href="https://linkedin.com/in/alexander-winkler-455937314"><img src="./img/Linkedin.png" alt=""></a>
+                    <a href="https://github.com/Rusty-Alex"><img src="./img/Github.png" alt=""></a>
+                </div>
+                <div></div>
+            </div>
+        </div>
+        }
+
+
+    </div>
+    <div class="header-line">
+        <div class="scrolling-wrapper">
+            @if(mainVariableService.activeEN){
+
+            <div class="scrolling-text">
+                <img src="./img/kreis.png" alt="">
+                <span>Available for remote work</span>
+                <img src="./img/kreis.png" alt="">
+                <span>Frontend Developer</span>
+                <img src="./img/kreis.png" alt="">
+                <span>Based in Thuringia</span>
+                <img src="./img/kreis.png" alt="">
+                <span>Open to work</span>
+            </div>
+            <div class="scrolling-text">
+                <img src="./img/kreis.png" alt="">
+                <span>Available for remote work</span>
+                <img src="./img/kreis.png" alt="">
+                <span>Frontend Developer</span>
+                <img src="./img/kreis.png" alt="">
+                <span>Based in Thuringia</span>
+                <img src="./img/kreis.png" alt="">
+                <span>Open to work</span>
+            </div>
+
+            }@else{
+            <div class="scrolling-text">
+                <img src="./img/kreis.png" alt="">
+                <span>Verfügbar für Remote-Arbeit</span>
+                <img src="./img/kreis.png" alt="">
+                <span>Frontend Entwickler</span>
+                <img src="./img/kreis.png" alt="">
+                <span>Sitz in Thüringen</span>
+                <img src="./img/kreis.png" alt="">
+                <span>Offen für Arbeit</span>
+            </div>
+            <div class="scrolling-text">
+                <img src="./img/kreis.png" alt="">
+                <span>Verfügbar für Remote-Arbeit</span>
+                <img src="./img/kreis.png" alt="">
+                <span>Frontend Entwickler</span>
+                <img src="./img/kreis.png" alt="">
+                <span>Sitz in Thüringen</span>
+                <img src="./img/kreis.png" alt="">
+                <span>Offen für Arbeit</span>
+            </div>
+            }
+
+        </div>
+    </div>
+</section>

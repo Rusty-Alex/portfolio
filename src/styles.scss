@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%;background-image: url('assets/img/headerBackground.png');
+    background-size: cover;
+    background-repeat: no-repeat; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    scroll-behavior: smooth;  
+}
+
+@font-face {
+    font-family: 'FiraCode';
+    src: url('assets/fonts/FiraCode.ttf');
+}
+
+@font-face {
+    font-family: 'Karla-Italic';
+    src: url('assets/fonts/Karla-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'karla';
+    src: url('assets/fonts/Karla.ttf');
+}
+
+

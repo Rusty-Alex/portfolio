@@ -1,0 +1,382 @@
+.projects {
+    background-color: #1c1c1c;
+    width: 100%;
+    min-height: 715px;
+    padding-bottom: 100px;
+    
+}
+
+.header {
+    margin: auto;
+    max-width: 1440px;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    padding-left: 96px;
+    padding-right: 96px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.project-title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & p:nth-of-type(1) {
+        font-family: 'karla', 'openSans', 'timesNewRoman';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28.06px;
+        color: #3dcfb6;
+
+    }
+
+    & p:nth-of-type(2) {
+        font-family: 'firaCode', 'openSans', 'timesNewRoman';
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: -3%;
+        color: #3dcfb6;
+
+    }
+}
+
+.project-content-area-img {
+    width: 320px;
+    height: 451px;
+    margin-top: 230px;
+    position: relative;
+
+
+
+}
+
+.project-pic {
+    width: 315px;
+    height: 212px;
+    object-fit: contain;
+    position: absolute;
+}
+
+.pic-1 {
+    top: 0;
+    left: 0;
+}
+
+.pic-2 {
+    top: 109px;
+    left: 0;
+}
+
+.pic-3 {
+    top: 200px;
+    left: 0;
+}
+
+.pic-4 {
+    top: 250px;
+    left: 0;
+}
+
+.sonn-Pic {
+    width: 315px;
+    height: 212px;
+    position: relative;
+
+    & img:first-of-type {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 296px;
+        height: 192px;
+        object-fit: cover;
+        z-index: 10;
+        border-radius: 10px;
+    }
+
+    & img:last-of-type {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        width: 296px;
+        height: 192px;
+        z-index: 0;
+    }
+}
+
+.project-main-content {
+    width: 880px;
+    height: 695px;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    flex-shrink: 0;
+
+}
+
+.project-info {
+    width: 456px;
+    min-height: 44px;
+    font-family: 'karla', 'openSans', 'timesNewRoman';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.project-content {
+    display: flex;
+    height: 100%;
+}
+
+.project-content-area {
+    display: flex;
+    flex-direction: column;
+    width: 880px;
+    height: 327px;
+
+
+}
+
+.project-join {
+    display: flex;
+    height: 109px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 40px 32px 40px 32px;
+    border-top: 1px solid #3dcfb6;
+    transition: all 125ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(61, 207, 182, 0.3);
+    }
+
+}
+
+.project-epl {
+    display: flex;
+    height: 109px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 40px 32px 40px 32px;
+    border-top: 1px solid #3dcfb6;
+    transition: all 125ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(61, 207, 182, 0.3);
+    }
+
+}
+
+.project-dabubble {
+    display: flex;
+    height: 109px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 40px 32px 40px 32px;
+    border-top: 1px solid #3dcfb6;
+    transition: all 125ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(61, 207, 182, 0.3);
+    }
+
+}
+
+.project-son {
+    display: flex;
+    height: 109px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 40px 32px 40px 32px;
+    border-top: 1px solid #3dcfb6;
+    border-bottom: 1px solid #3dcfb6;
+    transition: all 125ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(61, 207, 182, 0.3);
+    }
+
+}
+
+.project-join-title {
+    display: flex;
+    gap: 4px;
+    width: 270px;
+    height: 29px;
+    font-size: 24px;
+    font-family: 'firaCode', 'openSans', 'timesNewRoman';
+    font-weight: 700;
+    line-height: 28.8px;
+
+    color: #ffffff;
+
+    & img {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+.project-join-info {
+    display: flex;
+    justify-content: end;
+    gap: 4px;
+    width: 270px;
+    height: 29px;
+    font-size: 18px;
+    font-family: 'karla', 'openSans', 'timesNewRoman';
+    font-weight: 400;
+    line-height: 21.6px;
+    color: #ffffff;
+
+    & p:nth-of-type(even) {
+        color: #3dcfb6;
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    .project-main-content {
+        width: 700px;
+    }
+
+    .header {
+        padding-top: 50px;
+        padding-bottom: 50px;        
+        gap: 40px;
+        
+    }
+}
+
+@media screen and (min-width: 1040px) and (max-width: 1200px) {
+    .project-main-content {
+        width: 600px;
+
+    }
+
+    .header {
+        justify-content: start;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .header {
+        justify-content: center;
+        padding-right: 96px;
+    }
+
+    .project-main-content {
+        width: 586px;
+    }
+
+
+    .project-content-area-img {
+        width: 0;
+    }
+
+    .project-content-area{
+        width: 100%;
+    }
+}
+
+
+@media  screen and (max-width: 750px) {
+    .header {
+        width: 100%;
+        
+        padding-left:10px ;
+        padding-right: 10px;
+        justify-content: center;
+       
+        
+    }
+    .project-main-content {
+        width: 358px;
+       
+    }
+
+    .project-join-info{
+        justify-content: start;
+    }
+
+    .project-info{
+        width: 100%;
+    }
+
+    .project-title{
+        & p:nth-of-type(2){
+            font-size: 40px;
+            line-height: 52px;
+
+        }
+    }
+
+    .project-join{
+        flex-direction: column;
+        height: 125px;
+        width: 100%;
+        gap:4px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .project-epl{
+        flex-direction: column;
+        height: 125px;
+        width: 100%;
+        gap:4px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .project-dabubble{
+        flex-direction: column;
+        height: 125px;
+        width: 100%;
+        gap:4px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 0;
+        padding-right: 0;
+
+        .project-join-info{
+            flex-wrap: wrap;
+        }
+    }
+    .project-son{
+        flex-direction: column;
+        height: 125px;
+        width: 100%;
+        gap:4px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {  
+    .project-dabubble{       
+
+        .project-join-info{
+            flex-wrap: wrap;
+        }
+    }
+    .project-main-content {
+        width: 100%;
+       
+    }
+}

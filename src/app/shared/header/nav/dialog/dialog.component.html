@@ -1,0 +1,30 @@
+<div class="nav-bar">
+    @if(mainVariableService.activeEN){
+
+    <a (click)="mainVariableService.scrollToAndCloseDialog('aboutMeId', dialogRef)">About me</a>
+    <a (click)="mainVariableService.scrollToAndCloseDialog('skills', dialogRef)">Skills</a>
+    <a (click)="mainVariableService.scrollToAndCloseDialog('projects', dialogRef)">Projects</a>
+
+    <div class="menu-Speak">
+        <div [class.activeEN]="mainVariableService.activeEN" (click)="mainVariableService.activeENFunc()">
+            <span>EN</span>
+        </div>
+        <div [class.activeDE]="mainVariableService.activeDE" (click)="mainVariableService.activeDEFunc()">
+            <span>DE</span>
+        </div>
+    </div>
+    }@else {
+
+    <a (click)="mainVariableService.scrollToAndCloseDialog('aboutMeId', dialogRef)">Über mich</a>
+    <a (click)="mainVariableService.scrollToAndCloseDialog('skills', dialogRef)">Fähigkeiten</a>
+    <a (click)="mainVariableService.scrollToAndCloseDialog('projects', dialogRef)">Projekte</a>
+    <div class="menu-Speak">
+        <div [class.activeEN]="mainVariableService.activeEN" (click)="mainVariableService.activeENFunc()">
+            <span>EN</span>
+        </div>
+        <div [class.activeDE]="mainVariableService.activeDE" (click)="mainVariableService.activeDEFunc()">
+            <span>DE</span>
+        </div>
+    </div>
+    }
+</div>

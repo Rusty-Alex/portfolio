@@ -1,0 +1,65 @@
+<div class="about">
+<section class="header">
+
+    <div class="about-me" id="aboutMeId">
+        <div class="about-me-pic"><img (mousemove)="mainVariableService.mouseMove()" src="./img/test.jpg" alt="">
+            @if(mainVariableService.movemouse){<img src="./img/backgroundSelfPic.png" alt="" class="show">} </div>
+        <div class="about-me-text">
+            @if(mainVariableService.activeEN){
+            <p>Who I AM</p>
+            <div class="about-me-text-content">
+                <p>About me</p>
+                <div class="about-me-content">
+                    <p>Hi, I’m a german speaking Frontend Developer based in Thuringia. Motivated by the limitless
+                        opportunities within IT, I am excited about crafting visually captivating and intuitive websites
+                        and applications.</p>
+                    <div class="about-me-small-Info">
+                        <div> <img src="./img/location.png" alt="">
+                            <p> Flexible in terms of working environments, I can work effectively both on-site in
+                                Thuringia and remotely.</p>
+                        </div>
+                        <div><img src="./img/brain.png" alt="">
+                            <p>I am open-minded and always looking for personal challenges to constantly improve my
+                                knowledge and skills.</p>
+                        </div>
+                        <div><img src="./img/RadHaken.png" alt="">
+                            <p>In my profession, programming isn't just about writing code, it's a creative form of
+                                problem-solving. I take pride in my ability to distill complex technical challenges into
+                                simple, user-friendly solutions. This way, I help you achieve your goals and bring your
+                                visions to life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }@else {
+            <p>Wer ich bin</p>
+            <div class="about-me-text-content">
+                <p>Über mich</p>
+                <div class="about-me-content">
+                    <p>Hallo, ich bin ein deutschsprachiger Frontend-Entwickler mit Sitz in Thüringen. Motiviert durch
+                        die grenzenlosen Möglichkeiten in der IT, bin ich begeistert davon, visuell fesselnde und
+                        intuitive Webseiten und Anwendungen zu entwickeln.</p>
+                    <div class="about-me-small-Info">
+                        <div><img src="./img/location.png" alt="">
+                            <p>Ich bin flexibel in Bezug auf das Arbeitsumfeld und kann sowohl vor Ort in Thüringen als
+                                auch per Fernzugriff effektiv arbeiten.</p>
+                        </div>
+                        <div><img src="./img/brain.png" alt="">
+                            <p>Ich bin aufgeschlossen und immer auf der Suche nach persönlichen Herausforderungen, um
+                                meine Kenntnisse und Fähigkeiten ständig zu verbessern.</p>
+                        </div>
+                        <div><img src="./img/RadHaken.png" alt="">
+                            <p>Programmieren ist für mich mehr als Code – es ist kreative Problemlösung. Ich verwandle
+                                komplexe Herausforderungen in intuitive Lösungen und unterstütze Sie dabei, Ihre Ziele
+                                effizient zu erreichen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+
+
+</section>
+</div>

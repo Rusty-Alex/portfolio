@@ -1,0 +1,113 @@
+<div class="skill" id="skills">
+    <section class="header">
+        <div class="skill-area">
+            <div class="skill-text">
+                @if(mainVariableService.activeEN){
+                <p>Technologies</p>
+                <div class="skill-text-content">
+                    <p>SKill Set</p>
+                    <p>My journey has involved working on diverse projects, employing a range of frontend technologies
+                        and
+                        concepts. I am open to embracing new technologies and methodologies to Continously enhance my
+                        skills and
+                        stay ahead in the ever-evolving landscape of web development.</p>
+                    <div>
+                        <p>You need <span>another skill?</span></p>
+                        <p>Feel free to contact me. I look forward to expanding on my previous knowledge.</p>
+                    </div>
+                    <a (click)="mainVariableService.scrollTo('contact')"class="btn-skill"><span>Let's Talk</span></a>
+                </div>
+
+                }@else {
+                <p>Technologien</p>
+                <div class="skill-text-content">
+                    <p>Fertigkeiten</p>
+                    <p>Auf meinem Weg habe ich an verschiedenen Projekten gearbeitet und dabei eine Reihe von
+                        Frontend-Technologien und
+                        Konzepte. Ich bin offen für neue Technologien und Methoden, um meine Fähigkeiten kontinuierlich
+                        zu
+                        verbessern und
+                        in der sich ständig weiterentwickelnden Landschaft der Webentwicklung an der Spitze zu bleiben.
+                    </p>
+                    <div>
+                        <p>Sie benötigen<span> eine andere Fähigkeit?</span></p>
+                        <p>Nehmen Sie Kontakt mit mir auf. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.
+                        </p>
+                    </div>
+                    <a (click)="mainVariableService.scrollTo('contact')" class="btn-skill"><span>Reden wir</span></a>
+                </div>
+                }
+            </div>
+            <div class="skill-icon">
+                <div class="skill-div">
+                    <img class="skill-icon-all" src="./img/HTML.png" alt="">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-div">
+                    <img class="skill-icon-all" src="./img/CSS.png" alt="">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-div">
+                    <img class="skill-icon-all" src="./img/JavaScript.png" alt="">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-div">
+                    <img class="skill-icon-all" src="./img/MaterialDesign.png" alt="">
+                    <p>Material Design</p>
+                </div>
+                <div class="skill-div">
+                    <img class="skill-icon-all" src="./img/TypeScript.png" alt="">
+                    <p>TypeScript</p>
+                </div>
+                <div class="skill-div">
+                    <img class="skill-icon-all" src="./img/Angular.png" alt="">
+                    <p>Angular</p>
+                </div>
+                <div class="skill-div">
+                    <img class="skill-icon-all" src="./img/Firebase.png" alt="">
+                    <p>Firebase</p>
+                </div>
+                <div class="skill-div">
+                    <img class="skill-icon-all" src="./img/Git.png" alt="">
+                    <p>GIT</p>
+                </div>
+                <div class="skill-div">
+                    <img class="skill-icon-all" src="./img/Rest-Api.png" alt="">
+                    <p>Rest-Api</p>
+                </div>
+                <div class="skill-div">
+                    <img class="skill-icon-all" src="./img/Scrum.png" alt="">
+                    <p>Scrum</p>
+                </div>
+                <div class="skill-icon-growth" (mouseover)="mainVariableService.hoverGrowthMindset= true"
+                    (mouseleave)="mainVariableService.hoverGrowthMindset= false">
+                    <img class="skill-icon-growth-img" src="./img/GrowthMindset.png" alt="">
+                    <p>Growth mindset</p>
+                    @if(mainVariableService.hoverGrowthMindset){
+                    <div class="skill-icon-last">                       
+                            @if(mainVariableService.activeEN){
+                            <p>I have a special interest in learning</p>
+                            }@else {
+                            <p>Ich habe ein besonderes Interesse am lernen</p>
+                            }
+                            <div class="icon-skill">
+                                <div class="skill-icon-text">
+                                    <img class="skill-icon-last-img" src="./img/React.png" alt="">
+                                    <p>React</p>
+                                </div>
+                                <div class="skill-icon-text">
+                                    <img class="skill-icon-last-img" src="./img/VueJs.png" alt="">
+                                    <p>Vue js</p>
+                                </div>
+
+                            </div>
+                            <img class="skill-icon-last-line" src="./img/Vector.png" alt="">
+                        </div>                    
+                    }
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</div>

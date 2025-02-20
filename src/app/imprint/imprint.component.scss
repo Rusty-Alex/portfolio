@@ -1,0 +1,73 @@
+.imprint {
+    width: 100%;
+    height: calc(100vh - 246px);
+
+}
+
+.imprint-content {
+    max-width: 1440px;
+    padding: 96px;
+    margin: auto;
+    font-family: 'karla', 'openSans', 'timesNewRoman';
+    font-weight: 400;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+
+
+    & a {
+        text-decoration: none;
+        color: #3dcfb6;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    & img {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 96px;
+        right: 96px;
+        cursor: pointer;
+        transition: all 125ms ease-in-out;
+
+        &:hover {
+            width: 40px;
+            height: 40px;
+            content: url("../../assets/img/leftHover.png");
+        }
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .imprint-content {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        & img {
+            right: 30px;
+        }
+    }
+
+
+
+}
+
+@media screen and (max-height: 800px) {
+
+    .imprint-content {
+       padding-bottom: 0;
+       padding-top: 20px;
+    }
+
+    .imprint{
+        height: auto ;
+    }
+
+}

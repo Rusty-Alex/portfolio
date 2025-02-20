@@ -1,0 +1,32 @@
+
+<div class="nav">
+    @if(mainVariableService.isSmallScreen){
+        <div class="nav-width">
+            <img class="logo" src="./img/logo_transparent.png" alt="">
+            <img src="./img/menuIcon.png" alt="" (click)="openDialog()">            
+        </div>
+
+
+    }@else {
+        <div class="menu-Speak">
+            <div [class.activeEN]="mainVariableService.activeEN" (click)="mainVariableService.activeENFunc()"><span>EN</span></div>
+            <div [class.activeDE]="mainVariableService.activeDE" (click)="mainVariableService.activeDEFunc()"><span>DE</span></div>
+        </div>
+        <div class="nav-Refs">
+            <div>
+                @if(mainVariableService.activeEN){
+                <a  (click)="mainVariableService.scrollTo('aboutMeId')">About me</a>
+                <a  (click)="mainVariableService.scrollTo('skills')">Skills</a>
+                <a  (click)="mainVariableService.scrollTo('projects')">Projects</a>
+                }@else {
+                <a  (click)="mainVariableService.scrollTo('aboutMeId')">Über mich</a>
+                <a  (click)="mainVariableService.scrollTo('skills')">Fähigkeiten</a>
+                <a  (click)="mainVariableService.scrollTo('projects')">Projekte</a>
+                }
+            </div>
+            <img class="logo" src="./img/logo_transparent.png" alt="">
+        </div>
+   }
+    
+</div>
+

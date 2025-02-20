@@ -1,0 +1,39 @@
+<section class="imprint">
+
+    <div class="imprint-content">
+        <a [routerLink]="''" ><img src="./img/ArrowLeftDot.png" alt=""></a>
+        @if(mainVariableService.activeEN){
+        <h1>Legal Notice</h1>
+
+        <p>Alexander Winkler<br />
+            Jenaische Str. 75<br />
+            07407 Rudolstadt</p>
+
+        <h2>Contact</h2>
+        <p>Phone: 01726574991<br />
+            E-Mail: alexwinkler.dev&#64;gmail.com</p>
+
+        <h2>Editorially Responsible</h2>
+        <p>Alexander Winkler</p>
+
+        <p>Source: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></p>
+        }@else {
+        <h1>Impressum</h1>
+
+        <p>Alexander Winkler<br />
+            Jenaische Str. 75<br />
+            07407 Rudolstadt</p>
+
+        <h2>Kontakt</h2>
+        <p>Telefon: 01726574991<br />
+            E-Mail: alexwinkler.dev&#64;gmail.com</p>
+
+        <h2>Redaktionell verantwortlich</h2>
+        <p>Alexander Winkler</p>
+
+        <p>Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></p>
+        }
+
+    </div>
+
+</section>

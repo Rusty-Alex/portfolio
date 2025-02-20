@@ -1,0 +1,41 @@
+<section class="colleagues-says">
+    <div class="colleagues-says-title">
+        @if(mainVariableService.activeEN){What my Colleagues say about me
+        }@else {Was meine Kollegen über mich sagen}
+    </div>
+
+    <div class="colleagues-says-container">
+        <div class="colleagues-says-content">
+            @for (item of items; track item; let i = $index) {
+            <div class="item" [class]="getTransform(i)" [class.activeItem]="getTransform(i) === 'center'">
+                @if(mainVariableService.activeEN){
+                    <p>{{ item.englishSay }}</p>
+                
+                }@else {
+                    <p> {{ item.germanSay }}</p>
+               
+                }
+                <div class="colleagues-says-line"><span></span><span>{{ item.name }} - {{ item.team }}</span></div>
+                @if('center' === getTransform(i)){<img class="quote" src="./img/quotes.png" alt="">}
+
+
+            </div>
+            }
+           
+        </div>
+
+        <div class="controls">
+            <button class="prev" (click)="prev()"><img src="./img/ArrowLeftDot.png" alt=""></button>
+            <div class="dots">
+                @for (item of items; track item; let i = $index) {
+                <span class="dot" [class.active]="i === currentIndex"></span>
+                }
+            </div>
+            <button class="next" (click)="next()"><img src="./img/ArrowRightDot.png" alt=""></button>
+        </div>
+        
+    </div>
+    <img class="quoteSmall" src="./img/quotes.png" alt="">
+</section>
+
+

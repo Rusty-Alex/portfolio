@@ -1,0 +1,80 @@
+<section class="dialog-projects">
+    <div class="dialog-project-right">
+        <div class="dialog-project-title">
+            <p>{{projects[index].titleNumber}}</p>
+            <p>{{projects[index].title}}</p>
+        </div>
+        @if(mainVariableService.activeEN){
+        <p>What is this project about?</p>
+        <p>{{projects[index].englishDescription}}</p>
+        }@else {
+        <p>Worum geht es bei diesem Projekt?</p>
+        <p>{{projects[index].germanDescription}}</p>
+        }
+
+        <div class="dialog-project-skills-info">
+            @if(index == 0){
+            <div class="dialog-project-skills">
+                <img src="./img/HTMLDialog.png" alt="">
+                <p>HTML</p>
+                <img src="./img/CSSDialog.png" alt="">
+                <p>CSS</p>
+                <img src="./img/JavascriptDialog.png" alt="">
+                <p>JavaScript</p>
+                <img src="./img/FirebaseDialog.png" alt="">
+                <p>Firebase</p>
+            </div>
+            }@else if(index == 1){
+            <div class="dialog-project-skills">
+                <img src="./img/HTMLDialog.png" alt="">
+                <p>HTML</p>
+                <img src="./img/CSSDialog.png" alt="">
+                <p>CSS</p>
+                <img src="./img/JavascriptDialog.png" alt="">
+                <p>JavaScript</p>
+            </div>
+
+            }@else if (index == 2) {
+            <div class="dialog-project-skills">
+                <img src="./img/HTMLDialog.png" alt="">
+                <p>HTML</p>
+                <img src="./img/CSSDialog.png" alt="">
+                <p>CSS</p>
+                <img src="./img/TypeScriptDialog.png" alt="">
+                <p>TypeScript</p>
+                <img src="./img/AngularDialog.png" alt="">
+                <p>Angular</p>
+                <img src="./img/FirebaseDialog.png" alt="">
+                <p>Firebase</p>
+            </div>
+            }@else {
+            <div class="dialog-project-skills">
+                <img src="./img/HTMLDialog.png" alt="">
+                <p>HTML</p>
+                <img src="./img/CSSDialog.png" alt="">
+                <p>CSS</p>
+                <img src="./img/JavascriptDialog.png" alt="">
+                <p>JavaScript</p>
+            </div>
+            }
+
+            <div class="btn-project-dialog">
+                <a href="{{projects[index].github}}">GitHub <img src="./img/arrowleftup.png" alt=""></a>
+                <a href="{{projects[index].liveTest}}">Live Test <img src="./img/arrowleftup.png" alt=""></a>
+            </div>
+        </div>
+        
+
+    </div>
+    <div class="projects-img"><img src="./img/{{projects[index].image}}" alt=""></div>
+
+    <div class="dialog-project-next" (click)="nextProject()">
+        @if(mainVariableService.activeEN){
+        <p>Next project</p>}@else{<p class="next-project-German">Nächstes Projekt
+        </p>} 
+        <img src="./img/arrowNext.png" alt="">
+    </div>
+    <div class="close-Dialog" (click)="closeDialog()"><img src="./img/closeDialog.png" alt=""></div>
+
+
+</section>

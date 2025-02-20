@@ -1,0 +1,117 @@
+<section class="contact-me">
+  <div class="contact-me-container" id="contact">
+    <div class="contact-me-content">
+      <div class="contact-me-header" [ngClass]="{'contact-me-header-de': mainVariableService.activeDE}">
+        <div class="contact-me-title" [ngClass]="{'contact-me-title-de': mainVariableService.activeDE}">
+          <p>@if(mainVariableService.activeEN){Contact me} @else{Kontaktiere mich} </p>
+          <p>@if(mainVariableService.activeEN){Let's work together} @else{Lass uns zusammenarbeiten}
+          </p>
+        </div>
+        <div class="contact-me-line" [ngClass]="{'contact-me-line-de': mainVariableService.activeDE}">
+
+          <p>@if(mainVariableService.activeEN){Got a problem to solve?} @else{Haben Sie ein Problem zu
+            lösen?}</p>
+          <p>@if(mainVariableService.activeEN){Contact me through this form, I am interested in hearing from
+            you,
+            knowing your ideas and contributing to your projects with my work
+            } @else{Kontaktieren Sie mich über dieses Formular, ich bin daran interessiert, von Ihnen zu
+            hören,
+            Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen}</p>
+          <span>
+            <p>@if(mainVariableService.activeEN){Need a Frontend developer?} @else{Brauchen Sie einen
+              Frontend-Entwickler?}</p>
+            <p>@if(mainVariableService.activeEN){Let’s talk!} @else{Lass uns reden!}</p>
+
+          </span>
+        </div>
+      </div>
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-me-form">
+        <div class="contact-me-form-content">
+          <label>
+            <p>@if(mainVariableService.activeEN){What's your name} @else{Wie ist Ihr Name}</p>
+            <div *ngIf="name.invalid && name.touched && !showInputName" class="error-message"
+              (click)="focusInputName()">
+              @if (name.errors?.['required']) {
+              @if (mainVariableService.activeEN) {'Ooops!, your name is missing!'}
+              @else {'Ooops, Ihr Name fehlt!'}
+              }
+              @if (name.errors?.['pattern']) {
+              @if (mainVariableService.activeEN) {'Ooops!, your name is invalid!'}
+              @else {'Ooops!, Ihr Name ist ungültig!'}
+              }
+            </div>
+            <input #nameInput type="text" class="input" formControlName="name" [placeholder]="namePlaceholder"
+              (blur)="onBlurName()" *ngIf="showInputName">
+          </label>
+
+
+          <label>
+            <p>
+              @if(mainVariableService.activeEN){What's your email?}
+              @else{Was ist Ihre E-Mail}
+            </p>
+
+            <div *ngIf="email.invalid && email.touched && !showInputEmail" class="error-message"
+              (click)="focusInputEmail()">
+              @if (email.errors?.['required']) {
+              @if (mainVariableService.activeEN) {'Hoppla, your email is required!'}
+              @else {'Hoppla, Ihre E-Mail ist erforderlich!'}
+              }
+              @if (email.errors?.['pattern']) {
+              @if (mainVariableService.activeEN) {'Hoppla, your email is invalid!'}
+              @else {'Hoppla, Ihre E-Mail ist ungültig!'}
+              }
+            </div>
+
+
+            <input #emailInput class="input" type="email" formControlName="email" [placeholder]="emailPlaceholder"
+              (blur)="onBlurEmail()" *ngIf="showInputEmail">
+          </label>
+
+
+          <label>
+            <p>@if(mainVariableService.activeEN){How can I help you?} @else{Wie kann ich Ihnen helfen}</p>
+            <div *ngIf="message.invalid && message.touched && !showInputMessage" class="error-message"
+              (click)="focusInputMessage()">
+              @if (message.errors?.['required']) {
+              @if (mainVariableService.activeEN) {'What do you need to develop?'}
+              @else {'Was wollen Sie entwickeln?'}
+              }
+
+            </div>
+            <input class="input" formControlName="message" #messagelInput [placeholder]="messagePlaceholder"
+              (blur)=" onBlurMessage()" *ngIf="showInputMessage">
+          </label>
+
+        </div>
+        <div class="checkbox-container" [ngClass]="{'checkbox-container-de': mainVariableService.activeDE}">
+          <div class="checkbox-content" >
+            <input class="checkbox-input" type="checkbox" [formControl]="checkboxControl">
+            <span class="checkbox-area">
+              @if(mainVariableService.activeEN){
+              <p>I've read the</p>
+              <a [routerLink]="'/privacy'">privacy policy</a>
+              <p>and agree to the processing of my data as outlined.</p>
+              }@else {
+              <p>Ich habe die</p>
+              <a [routerLink]="'/privacy'">Datenschutzbestimmungen</a>
+              <p>und erkläre mich mit der Verarbeitung meiner Daten wie beschrieben einverstanden.</p>
+              }
+
+            </span>
+          </div>
+          @if(!checkboxControl.value && checkboxControl.touched){
+          <span class="error-checkbox">@if(mainVariableService.activeEN){Please accept the privacy policy
+            }@else{Bitte akzeptieren Sie die Datenschutzbestimmungen}</span>
+          }
+
+
+        </div>
+        <button class="btn-form" type="submit" [disabled]="contactForm.invalid || !checkboxControl.value">
+          <p> @if(mainVariableService.activeEN){Say Hello ;)
+            }@else{Sag Hallo ;)}</p>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,271 @@
+.about{
+    background-color: #1c1c1c;
+    width: 100%;
+}
+.header {
+    margin: auto;
+    max-width: 1440px;
+    height: 900px;    
+    position: relative;
+    z-index: 0;
+    padding-left: 96px;
+    padding-right: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me {
+    display: flex;
+    height: 708px;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.about-me-pic {
+    width: 568px;
+    height: 568px;
+    background-color: green;
+    border-radius: 30px;
+    position: relative;
+
+    & img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        z-index: 100;
+
+    }
+
+    & img:nth-of-type(2) {
+        position: absolute;
+        top: 30px;
+        left: -42px;
+        border-radius: 30px;
+        width: 568px;
+        height: 568px;
+        z-index: -1;
+
+    }
+
+}
+
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 568px;
+
+
+    gap: 20px;
+
+    & p:nth-of-type(1) {
+        font-family: 'karla', 'openSans', 'timesNewRoman';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28.06px;
+        color: #3dcfb6;
+    }
+}
+
+.about-me-text-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid #3dcfb6;
+    background-color: #1F2F2B;
+    padding: 32px;
+    gap: 40px;
+    
+
+    & p:nth-of-type(1) {
+        font-family: 'firaCode', 'openSans', 'timesNewRoman';
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 64px;
+        color: #3dcfb6;
+        
+    }
+}
+
+.about-me-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    & p:nth-of-type(1) {
+        font-family: 'karla', 'openSans', 'timesNewRoman';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21.6px;
+        color: #FFFFFF;
+    }
+}
+
+.about-me-small-Info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+
+    & img {
+        width: 32px;
+        height: 32px;
+    }
+
+    & div {
+        display: flex;
+        gap: 24px;
+
+        & p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 18px;
+            font-family: 'karla', 'openSans', 'timesNewRoman';
+            font-weight: 400;
+            line-height: 21.6px;
+
+            &:hover {
+                color: #FFFFFF;
+                cursor: default;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        height: auto;
+
+    }
+
+    .about-me-text {
+        align-self: center;
+    }
+
+    .header {
+        min-height: 1500px;
+
+
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .about-me-pic {
+        width: 358px;
+        height: 358px;
+
+        & img:nth-of-type(2) {
+
+            width: 358px;
+            height: 358px;
+        }
+    }
+
+    .about-me-text {
+        width: 358px;
+    }
+
+    .about-me-text-content {
+        width: 100%;
+
+        & p:nth-of-type(1) {
+            font-family: 'firaCode', 'openSans', 'timesNewRoman';
+            font-weight: 700;
+            font-size: 53px;            
+            
+
+        }
+    }
+
+    .about-me-content {
+        & p:nth-of-type(1) {
+            font-family: 'karla', 'openSans', 'timesNewRoman';
+            font-weight: 400;
+            font-size: 16px;
+
+        }
+    }
+
+    .about-me-small-Info {
+        & div {
+            font-size: 16px;
+        }
+    }
+
+    .about-me-content {
+        & p:nth-of-type(1) {
+            font-family: 'karla', 'openSans', 'timesNewRoman';
+            font-weight: 400;
+            font-size: 16px;
+
+        }
+    }
+
+    .about-me-small-Info {
+        & div {
+            & p {
+                font-size: 16px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .about-me-pic {
+        width: 100%;
+        height: 358px;
+
+        & img:nth-of-type(2) {
+            left: -10px;
+            width: 100%;
+            height: 95%;
+        }
+    }
+
+    .about-me-text {
+        width: 100%;
+
+    }
+
+    .about-me-text-content {
+
+        & p:nth-of-type(1) {
+            font-family: 'firaCode', 'openSans', 'timesNewRoman';
+            font-weight: 700;
+            font-size: 40px;
+
+        }
+    }
+
+    .about-me-content {
+        & p:nth-of-type(1) {
+            font-family: 'karla', 'openSans', 'timesNewRoman';
+            font-weight: 400;
+            font-size: 16px;
+
+        }
+    }
+
+    .about-me-small-Info {
+
+        & div {
+            & p {
+                font-size: 16px;
+            }
+        }
+    }
+}

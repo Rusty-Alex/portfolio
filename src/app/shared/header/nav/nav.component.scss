@@ -1,0 +1,106 @@
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 98px;
+    width: 100%;
+    font-family: 'firaCode', 'openSans', 'timesNewRoman';
+}
+
+.logo {
+    width: 128px;
+    height: 64px;
+}
+
+.menu-Speak {
+    display: flex;
+    width: 84px;
+    height: 30px;
+    border: 1px solid #3DCFB6;
+    border-radius: 100px;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        border-color: white;
+        color: #3DCFB6;
+    }
+
+    div {
+        width: 42px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #3DCFB6 50%;
+    }
+
+}
+
+.nav-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+    & img:nth-of-type(2) {
+        cursor: pointer;
+    }
+}
+
+.nav-Refs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin-left: 24px;
+
+    div {
+       display: flex;
+       gap: 24px;
+        a {
+            
+            color: white;
+            text-decoration: none;
+            transition: all 125ms ease-in-out;
+            cursor: pointer;
+            position: relative;            
+
+            &:hover::after {
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 8px;
+                height: 8px;
+                background-image: url('../../../../assets/img/kreis.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+
+}
+
+.activeEN {
+    background-color: #3DCFB6;
+    color: white;
+    border-radius: 100px;
+    transition: all 125ms ease-in-out;
+    cursor: default;  
+   
+}
+
+.activeDE {
+    background-color: #3DCFB6;
+    color: white;
+    border-radius: 100px;
+    transition: all 125ms ease-in-out;
+    cursor: default;   
+}
+

@@ -1,0 +1,125 @@
+.footer{
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 96px;
+    padding-right: 96px;
+    background-color: #1c1c1c;
+    
+}
+
+.footer-content{
+    margin: auto;
+    max-width: 1440px;
+    height: 126px;
+    position: relative;
+}
+
+.footer-logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    & img{
+        width: 132px;
+        height: 48px;
+    }
+}
+
+.footer-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width:125px;
+    height: 46px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    & p{
+        font-family: 'karla', 'openSans', 'timesNewRoman';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19.2px;
+        letter-spacing: 0;
+        color: #ffffff;
+    }
+}
+
+.footer-copyright{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 206px;
+    height: 22px;
+
+    & p{
+        font-family: 'firaCode', 'openSans', 'timesNewRoman';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21.6px;
+        letter-spacing: 0;
+        color: #3dcfb6;
+    }
+}
+
+.footer-links{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    & a{
+        text-decoration: none;
+        font-family: 'karla', 'openSans', 'timesNewRoman';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19.2px;
+        letter-spacing: 0;
+        color: #ffffff;
+        position: relative;
+        transition: all 125ms ease-in-out;
+
+        &:hover{
+            color: #3dcfb6;
+        }
+
+        &:hover::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -12px; // Abstand zum <a>-Element
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background-image: url('../../../assets/img/kreis.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .footer{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    .footer-copyright{
+       top: 120%;
+       width: 100%;
+       text-align: center;
+    }
+    
+}
