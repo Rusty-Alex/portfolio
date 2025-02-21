@@ -35,7 +35,7 @@
         width: 100%;
         height: 100%;
         border-radius: 30px;
-        z-index: 100;
+        object-position: center top;
 
     }
 
@@ -170,6 +170,7 @@
 
             width: 358px;
             height: 358px;
+            
         }
     }
 
