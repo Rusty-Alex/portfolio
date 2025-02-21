@@ -44,7 +44,7 @@ export class DialogProjectsComponent {
       englishDescription: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
       germanDescription: "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu. ",
       github: 'https://github.com/Rusty-Alex/join',
-      liveTest: 'join.winkler-entwicklung.de'
+      liveTest: 'https://development-winkler.de'
     },
 
     {
@@ -54,7 +54,7 @@ export class DialogProjectsComponent {
       germanDescription: 'Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.',
       englishDescription: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
       github: 'https://github.com/Rusty-Alex/epl',
-      liveTest: 'epl.winkler-entwicklung.de'
+      liveTest: 'https://web-development-winkler.de'
     },
 
     {

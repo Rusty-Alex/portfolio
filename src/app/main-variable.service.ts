@@ -12,6 +12,7 @@ export class MainVariableService {
   public movemouse: boolean = false;
   public hoverGrowthMindset: boolean = false;
   public hoverProjecScreen: boolean = false;
+  public hoverLetsTalk: boolean = false;
 
 
   constructor(private breakpointObserver: BreakpointObserver) {

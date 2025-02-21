@@ -20,7 +20,22 @@
           <span>
             <p>@if(mainVariableService.activeEN){Need a Frontend developer?} @else{Brauchen Sie einen
               Frontend-Entwickler?}</p>
-            <p>@if(mainVariableService.activeEN){Let’s talk!} @else{Lass uns reden!}</p>
+            <p (mouseover)="mainVariableService.hoverLetsTalk= true"
+              (mouseleave)="mainVariableService.hoverLetsTalk= false">
+              @if(mainVariableService.activeEN){Let’s
+              talk!} @else{Lass uns reden!}</p>
+
+              @if(mainVariableService.hoverLetsTalk){
+                <div class="skill-icon-last">                       
+                  @if(mainVariableService.activeEN){
+                  <p>Send me a message with my form</p>
+                  }@else {
+                  <p>Senden Sie mir eine Nachricht mit meinem Formular</p>
+                  }
+                  
+                  <img class="skill-icon-last-line" src="./img/Vector.png" alt="">
+              </div> 
+              }
 
           </span>
         </div>
@@ -85,7 +100,7 @@
 
         </div>
         <div class="checkbox-container" [ngClass]="{'checkbox-container-de': mainVariableService.activeDE}">
-          <div class="checkbox-content" >
+          <div class="checkbox-content">
             <input class="checkbox-input" type="checkbox" [formControl]="checkboxControl">
             <span class="checkbox-area">
               @if(mainVariableService.activeEN){
