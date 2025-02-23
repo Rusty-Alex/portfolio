@@ -1,7 +1,7 @@
 <div class="skill" id="skills">
     <section class="header">
         <div class="skill-area">
-            <div class="skill-text">
+            <div class="skill-text" [class.showSkillText]="checkComponentActiveService.skillsActive" >
                 @if(mainVariableService.activeEN){
                 <p>Technologies</p>
                 <div class="skill-text-content">
@@ -38,7 +38,7 @@
                 </div>
                 }
             </div>
-            <div class="skill-icon">
+            <div class="skill-icon" [class.showSkillIcon]="checkComponentActiveService.skillsActive">
                 <div class="skill-div">
                     <img class="skill-icon-all" src="./img/HTML.png" alt="">
                     <p>HTML</p>

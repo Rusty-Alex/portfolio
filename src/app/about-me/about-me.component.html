@@ -1,10 +1,10 @@
 <div class="about">
-<section class="header">
+<section class="header" >
 
-    <div class="about-me" id="aboutMeId">
-        <div class="about-me-pic"><img (mousemove)="mainVariableService.mouseMove()" src="./img/alex.jpg" alt="">
+    <div class="about-me" id="aboutMeId"  >
+        <div class="about-me-pic" [class.showPic]="checkComponentActiveService.aboutActive"><img (mousemove)="mainVariableService.mouseMove()" src="./img/alex.jpg" alt="">
             @if(mainVariableService.movemouse){<img src="./img/backgroundSelfPic.png" alt="" class="show">} </div>
-        <div class="about-me-text">
+        <div class="about-me-text" [class.showText]="checkComponentActiveService.aboutActive">
             @if(mainVariableService.activeEN){
             <p>Who I AM</p>
             <div class="about-me-text-content">

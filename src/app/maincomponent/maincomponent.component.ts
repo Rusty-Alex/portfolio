@@ -6,12 +6,13 @@ import { SkillsComponent } from '../skills/skills.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { colleaguesSaysComponent } from '../collage-says/colleagues-says.component';
 import { ContactMeComponent } from '../contact-me/contact-me.component';
+import { OnViewportDirective } from '../directives/on-viewport.directive';
 
 
 
 @Component({
   selector: 'app-maincomponent',
-  imports: [ HeaderComponent, AboutMeComponent, SkillsComponent, ProjectsComponent, colleaguesSaysComponent, ContactMeComponent,  CommonModule ],
+  imports: [OnViewportDirective, HeaderComponent, AboutMeComponent, SkillsComponent, ProjectsComponent, colleaguesSaysComponent, ContactMeComponent,  CommonModule ],
   templateUrl: './maincomponent.component.html',
   styleUrl: './maincomponent.component.scss'
 })

@@ -6,6 +6,7 @@ import { MainVariableService } from '../main-variable.service';
 import { MatDialog, } from '@angular/material/dialog';
 import { ContactdialogComponent } from './contactdialog/contactdialog.component';
 import { RouterModule } from '@angular/router';
+import { CheckComponentActiveService } from '../check-component-active.service';
 
 
 
@@ -26,7 +27,7 @@ export class ContactMeComponent {
   sendMessageTrue: boolean = false;
   
 
-  constructor(public http: HttpClient, public mainVariableService: MainVariableService, public dialog: MatDialog) {
+  constructor(public http: HttpClient, public mainVariableService: MainVariableService, public dialog: MatDialog,public checkComponentActiveService: CheckComponentActiveService) {
 
   }
 

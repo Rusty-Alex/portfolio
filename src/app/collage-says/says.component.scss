@@ -7,6 +7,7 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  overflow: hidden;
 }
 
 .colleagues-says-container {
@@ -15,13 +16,32 @@
   width: 100%;
   height: 362px;
   overflow: hidden;
- 
+  opacity: 0; 
   
   display: flex;
   flex-direction: column;
   margin: auto;
   z-index: 0;
   margin-top: 40px;
+}
+
+.showSays {
+
+  animation: ColleaguesSays 2s ease-in-out forwards;
+  animation-delay: 0.5s;
+  
+}
+
+@keyframes ColleaguesSays {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .colleagues-says-container::before,
@@ -53,6 +73,25 @@
   font-size: 32px;
   line-height: 41.98px;
   color: #3DCFB6;
+  opacity: 0;
+}
+
+.showSaysTitle{
+
+  animation: ColleaguesSaysTitle 2s ease-in-out forwards;
+
+}
+
+@keyframes ColleaguesSaysTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .colleagues-says-content {

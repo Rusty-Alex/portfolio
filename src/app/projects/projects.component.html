@@ -1,6 +1,6 @@
 <div class="projects">
     <section class="header">
-        <div class="project-main-content">
+        <div class="project-main-content" [class.showProjects]="checkComponentActiveService.projectsActive">
             <div class="project-title">
                 <p>Portfolio</p>
                 @if(mainVariableService.activeEN){

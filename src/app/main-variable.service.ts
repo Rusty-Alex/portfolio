@@ -3,6 +3,7 @@ import { BreakpointObserver } from '@angular/cdk/layout';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -33,6 +34,10 @@ export class MainVariableService {
     });
 
   }
+
+
+
+  
   mouseMove() {
     this.movemouse = true;
   }
@@ -91,7 +96,7 @@ export class MainVariableService {
 
   backMain(section: string) {
     this.navLegalPrivacy = false;
-
+    this.legalNotice = false;
     this.router.navigate(['']).then(() => {
       setTimeout(() => {
         const element = document.getElementById(section);
@@ -102,7 +107,7 @@ export class MainVariableService {
     });
   }
   redirectToHome() {
-    this.location.replaceState('/');  
+    this.location.replaceState('/');
   }
 }
 

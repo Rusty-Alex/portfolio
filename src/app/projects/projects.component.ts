@@ -9,6 +9,7 @@ import {
   MatDialogContent,
   MatDialogTitle,
 } from '@angular/material/dialog';
+import { CheckComponentActiveService } from '../check-component-active.service';
 
 @Component({
   selector: 'app-projects',
@@ -21,7 +22,7 @@ export class ProjectsComponent {
   public hoverProjectEPL: boolean = false;
   public hoverProjectSon: boolean = false;
   public hoverProjectDabubble: boolean = false;  
-  constructor(public mainVariableService: MainVariableService, public dialog: MatDialog) { }
+  constructor(public mainVariableService: MainVariableService, public dialog: MatDialog ,public checkComponentActiveService: CheckComponentActiveService) { }
 
   openProjects(index: number) {
    

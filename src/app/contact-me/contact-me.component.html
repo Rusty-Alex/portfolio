@@ -1,7 +1,8 @@
 <section class="contact-me">
   <div class="contact-me-container" id="contact">
     <div class="contact-me-content">
-      <div class="contact-me-header" [ngClass]="{'contact-me-header-de': mainVariableService.activeDE}">
+      <div class="contact-me-header" [ngClass]="{'contact-me-header-de': mainVariableService.activeDE}"
+        [class.showContactText]="checkComponentActiveService.contactActive">
         <div class="contact-me-title" [ngClass]="{'contact-me-title-de': mainVariableService.activeDE}">
           <p>@if(mainVariableService.activeEN){Contact me} @else{Kontaktiere mich} </p>
           <p>@if(mainVariableService.activeEN){Let's work together} @else{Lass uns zusammenarbeiten}
@@ -25,22 +26,23 @@
               @if(mainVariableService.activeEN){Let’s
               talk!} @else{Lass uns reden!}</p>
 
-              @if(mainVariableService.hoverLetsTalk){
-                <div class="skill-icon-last">                       
-                  @if(mainVariableService.activeEN){
-                  <p>Send me a message with my form</p>
-                  }@else {
-                  <p>Senden Sie mir eine Nachricht mit meinem Formular</p>
-                  }
-                  
-                  <img class="skill-icon-last-line" src="./img/Vector.png" alt="">
-              </div> 
+            @if(mainVariableService.hoverLetsTalk){
+            <div class="skill-icon-last">
+              @if(mainVariableService.activeEN){
+              <p>Send me a message with my form</p>
+              }@else {
+              <p>Senden Sie mir eine Nachricht mit meinem Formular</p>
               }
+
+              <img class="skill-icon-last-line" src="./img/Vector.png" alt="">
+            </div>
+            }
 
           </span>
         </div>
       </div>
-      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-me-form">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-me-form"
+        [class.showContactForm]=" checkComponentActiveService.contactActive">
         <div class="contact-me-form-content">
           <label>
             <p>@if(mainVariableService.activeEN){What's your name} @else{Wie ist Ihr Name}</p>

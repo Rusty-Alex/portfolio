@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MainVariableService } from '../main-variable.service';
+import { CheckComponentActiveService } from '../check-component-active.service';
 
 @Component({
   selector: 'app-skills',
@@ -8,7 +9,7 @@ import { MainVariableService } from '../main-variable.service';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
-  constructor(public mainVariableService: MainVariableService) { }
+  constructor(public mainVariableService: MainVariableService, public checkComponentActiveService: CheckComponentActiveService) { }
  
 
 }

@@ -13,6 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .about-me {
@@ -29,6 +30,7 @@
     background-color: green;
     border-radius: 30px;
     position: relative;
+    opacity: 0;
 
     & img {
         object-fit: cover;
@@ -52,11 +54,31 @@
 
 }
 
+.showPic{
+    animation-name: showPicActive;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes showPicActive {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .about-me-text {
     display: flex;
     flex-direction: column;
     align-self: flex-end;
     width: 568px;
+    opacity: 0;
 
 
     gap: 20px;
@@ -67,6 +89,26 @@
         font-size: 24px;
         line-height: 28.06px;
         color: #3dcfb6;
+    }
+}
+
+.showText{
+    animation-name: showTextActive;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+
+}
+
+@keyframes showTextActive {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 

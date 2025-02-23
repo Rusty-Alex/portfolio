@@ -7,6 +7,7 @@
     margin: auto;
     max-width: 1440px;
     padding: 96px;
+    overflow: hidden;
 }
 
 .contact-me-content {
@@ -22,6 +23,23 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    opacity: 0;
+}
+
+.showContactText{
+animation: ContactText 2s ease-in-out forwards;
+}
+
+@keyframes ContactText {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .contact-me-title {
@@ -136,7 +154,26 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    opacity: 0;
 }
+
+
+.showContactForm{
+animation: ContactForm 2s ease-in-out forwards; 
+}
+
+@keyframes ContactForm {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 
 .contact-me-form-content {
     display: flex;

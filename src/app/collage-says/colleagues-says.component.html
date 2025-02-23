@@ -1,10 +1,10 @@
 <section class="colleagues-says">
-    <div class="colleagues-says-title">
+    <div class="colleagues-says-title" [class.showSaysTitle]="checkComponentActiveService.colleaguesSays" >
         @if(mainVariableService.activeEN){What my Colleagues say about me
         }@else {Was meine Kollegen über mich sagen}
     </div>
 
-    <div class="colleagues-says-container">
+    <div class="colleagues-says-container" [class.showSays]="checkComponentActiveService.colleaguesSays">
         <div class="colleagues-says-content">
             @for (item of items; track item; let i = $index) {
             <div class="item" [class]="getTransform(i)" [class.activeItem]="getTransform(i) === 'center'">

@@ -2,6 +2,7 @@ import { Component,  } from '@angular/core';
 import { MainVariableService } from '../main-variable.service';
 import { CommonModule } from '@angular/common';
 import { Says } from '../projects';
+import { CheckComponentActiveService } from '../check-component-active.service';
 
 @Component({
   selector: 'app-colleagues-says',
@@ -10,7 +11,7 @@ import { Says } from '../projects';
   styleUrl: './says.component.scss'
 })
 export class colleaguesSaysComponent {
-  constructor(public mainVariableService: MainVariableService) {
+  constructor(public mainVariableService: MainVariableService, public checkComponentActiveService: CheckComponentActiveService) {
 
    }  
 
