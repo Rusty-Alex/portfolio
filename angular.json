@@ -21,6 +21,8 @@
             "baseHref": "./",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "outputHashing": "all", 
+            "deployUrl": "/",          
             "polyfills": [
               "zone.js"
             ],

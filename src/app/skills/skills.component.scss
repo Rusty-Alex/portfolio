@@ -3,13 +3,14 @@
     width: 100%;
     min-height: 696px;
     height: auto;
+    background: radial-gradient(22.43% 43.85% at 1.22% 52.45%, rgb(12, 63, 54) 0%, #1C1C1C 100%);
 }
 
 .header {
     margin: auto;
     max-width: 1440px;
     height: 100%;
-    background: radial-gradient(22.43% 43.85% at 1.22% 52.45%, rgb(12, 63, 54) 0%, #1C1C1C 100%);
+    
     position: relative;
     z-index: 0;
     padding-left: 96px;

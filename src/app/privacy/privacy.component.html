@@ -1,6 +1,8 @@
 <section class="privacy">
+    
     <div class="privacy-content">
-        <a [routerLink]="''"><img src="./img/ArrowLeftDot.png" alt=""></a>
+        <app-nav></app-nav>
+        <a [routerLink]="''" (click)="mainVariableService.legalNoticeClose()"><img src="./img/ArrowLeftDot.png" alt=""></a>
         @if(mainVariableService.activeDE){
 
 

@@ -6,7 +6,7 @@
 
 .imprint-content {
     max-width: 1440px;
-    padding: 96px;
+    padding: 0 96px;
     margin: auto;
     font-family: 'karla', 'openSans', 'timesNewRoman';
     font-weight: 400;
@@ -27,17 +27,17 @@
     }
 
     & img {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
         position: absolute;
-        top: 96px;
-        right: 96px;
+        top: 155px;
+        left:  calc(50% + 20px);
         cursor: pointer;
         transition: all 125ms ease-in-out;
 
         &:hover {
-            width: 40px;
-            height: 40px;
+            width: 60px;
+            height: 60px;
             content: url("../../assets/img/leftHover.png");
         }
     }

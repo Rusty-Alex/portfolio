@@ -1,4 +1,36 @@
 <div class="nav-bar">
+    @if(mainVariableService.navLegalPrivacy){
+    @if(mainVariableService.activeEN){
+
+    <a (click)="mainVariableService.scrollToAndCloseDialogBackMain('aboutMeId', dialogRef)">About me</a>
+    <a (click)="mainVariableService.scrollToAndCloseDialogBackMain('skills', dialogRef)">Skills</a>
+    <a (click)="mainVariableService.scrollToAndCloseDialogBackMain('projects', dialogRef)">Projects</a>
+
+    <div class="menu-Speak">
+        <div [class.activeEN]="mainVariableService.activeEN" (click)="mainVariableService.activeENFunc()">
+            <span>EN</span>
+        </div>
+        <div [class.activeDE]="mainVariableService.activeDE" (click)="mainVariableService.activeDEFunc()">
+            <span>DE</span>
+        </div>
+    </div>
+    }@else {
+
+    <a (click)="mainVariableService.scrollToAndCloseDialogBackMain('aboutMeId', dialogRef)">Über mich</a>
+    <a (click)="mainVariableService.scrollToAndCloseDialogBackMain('skills', dialogRef)">Fähigkeiten</a>
+    <a (click)="mainVariableService.scrollToAndCloseDialogBackMain('projects', dialogRef)">Projekte</a>
+    <div class="menu-Speak">
+        <div [class.activeEN]="mainVariableService.activeEN" (click)="mainVariableService.activeENFunc()">
+            <span>EN</span>
+        </div>
+        <div [class.activeDE]="mainVariableService.activeDE" (click)="mainVariableService.activeDEFunc()">
+            <span>DE</span>
+        </div>
+    </div>
+    }
+    }@else{
+
+
     @if(mainVariableService.activeEN){
 
     <a (click)="mainVariableService.scrollToAndCloseDialog('aboutMeId', dialogRef)">About me</a>
@@ -26,5 +58,6 @@
             <span>DE</span>
         </div>
     </div>
+    }
     }
 </div>

@@ -17,7 +17,7 @@ import { DialogComponent } from './dialog/dialog.component';
 export class NavComponent {
 
   constructor(public mainVariableService: MainVariableService, private dialog: MatDialog)  {
-    this.mainVariableService.activeENFunc();
+    
   }
 
    openDialog() {

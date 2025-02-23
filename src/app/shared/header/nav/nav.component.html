@@ -14,15 +14,28 @@
         </div>
         <div class="nav-Refs">
             <div>
-                @if(mainVariableService.activeEN){
-                <a  (click)="mainVariableService.scrollTo('aboutMeId')">About me</a>
-                <a  (click)="mainVariableService.scrollTo('skills')">Skills</a>
-                <a  (click)="mainVariableService.scrollTo('projects')">Projects</a>
+                @if(mainVariableService.navLegalPrivacy){
+                    @if(mainVariableService.activeEN){
+                        <a  href="#" (click)="mainVariableService.backMain('aboutMeId'); $event.preventDefault()">About me</a>
+                        <a  href="#" (click)="mainVariableService.backMain('skills'); $event.preventDefault()">Skills</a>
+                        <a href="#" (click)="mainVariableService.backMain('projects'); $event.preventDefault()">Projects</a>
+                        }@else {
+                        <a  href="#" (click)="mainVariableService.backMain('aboutMeId'); $event.preventDefault()">Über mich</a>
+                        <a  href="#" (click)="mainVariableService.backMain('skills'); $event.preventDefault()">Fähigkeiten</a>
+                        <a  href="#" (click)="mainVariableService.backMain('projects'); $event.preventDefault()">Projekte</a>
+                        }
                 }@else {
-                <a  (click)="mainVariableService.scrollTo('aboutMeId')">Über mich</a>
-                <a  (click)="mainVariableService.scrollTo('skills')">Fähigkeiten</a>
-                <a  (click)="mainVariableService.scrollTo('projects')">Projekte</a>
+                    @if(mainVariableService.activeEN){
+                        <a  (click)="mainVariableService.scrollTo('aboutMeId')">About me</a>
+                        <a  (click)="mainVariableService.scrollTo('skills')">Skills</a>
+                        <a  (click)="mainVariableService.scrollTo('projects')">Projects</a>
+                        }@else {
+                        <a  (click)="mainVariableService.scrollTo('aboutMeId')">Über mich</a>
+                        <a  (click)="mainVariableService.scrollTo('skills')">Fähigkeiten</a>
+                        <a  (click)="mainVariableService.scrollTo('projects')">Projekte</a>
+                        }
                 }
+                
             </div>
             <img class="logo" src="./img/logo_transparent.png" alt="">
         </div>

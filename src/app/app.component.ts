@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from './shared/footer/footer.component';
 
 
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, CommonModule, FooterComponent, ],
@@ -12,5 +13,7 @@ import { FooterComponent } from './shared/footer/footer.component';
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
+  constructor() {}
   title = 'Alexander Winkler';
+  
 }
