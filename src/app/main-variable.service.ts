@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { Router } from '@angular/router';
-import { Location } from '@angular/common';
+
 
 
 @Injectable({
@@ -21,7 +21,7 @@ export class MainVariableService {
 
 
 
-  constructor(private breakpointObserver: BreakpointObserver, private router: Router, public location: Location) {
+  constructor(private breakpointObserver: BreakpointObserver, private router: Router, ) {
     this.breakpointObserver.observe(['(max-width: 1000px)']).subscribe(result => {
       this.isSmallScreen = result.matches;
     });
@@ -106,9 +106,7 @@ export class MainVariableService {
       }, 100);
     });
   }
-  redirectToHome() {
-    this.location.replaceState('/');
-  }
+ 
 }
 
 

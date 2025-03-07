@@ -29,7 +29,7 @@ export class DialogProjectsComponent {
   }
 
   nextProject() {
-    if (this.index == 3) {
+    if (this.index == 2) {
       this.index = -1;
     }
 
@@ -57,18 +57,18 @@ export class DialogProjectsComponent {
       liveTest: 'https://web-development-winkler.de'
     },
 
-    {
-      titleNumber: "03",
-      title: 'DABubble',
-      image: 'DabubbleBig.png',
-      germanDescription: 'Diese App ist ein Slack Clone App. Es revolutioniert die Team-Kommunikation und die Zusammenarbeit mit seiner intuitiven Schnittstelle, Echtzeit-Messaging, und robuste Kanalorganisation.',
-      englishDescription: 'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.',
-      github: 'test1.de',
-      liveTest: 'test1.de'
-    },
+    // {
+    //   titleNumber: "03",
+    //   title: 'DABubble',
+    //   image: 'DabubbleBig.png',
+    //   germanDescription: 'Diese App ist ein Slack Clone App. Es revolutioniert die Team-Kommunikation und die Zusammenarbeit mit seiner intuitiven Schnittstelle, Echtzeit-Messaging, und robuste Kanalorganisation.',
+    //   englishDescription: 'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.',
+    //   github: 'test1.de',
+    //   liveTest: 'test1.de'
+    // },
 
     {
-      titleNumber: "04",
+      titleNumber: "03",
       title: 'Sonnenschein ',
       image: 'sonn.png',
       germanDescription: ' Diese Webseite ist für eine Kundin erstellt. Die Yoga und Therapie Kurse anbietet.',

@@ -157,7 +157,7 @@ export class ContactMeComponent {
   mailTest = true;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://winkler-entwicklung.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

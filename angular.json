@@ -18,11 +18,11 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/portfolio",
-            "baseHref": "./",
+            "baseHref": "/",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "outputHashing": "all", 
-            "deployUrl": "/",          
+            "deployUrl": "/",
+                                
             "polyfills": [
               "zone.js"
             ],

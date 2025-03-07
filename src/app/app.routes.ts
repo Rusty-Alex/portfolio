@@ -9,7 +9,7 @@ export const routes: Routes = [
   { path: 'imprint', component: ImprintComponent },
   { path: 'privacy', component: PrivacyComponent },
   { path: 'main', component: MaincomponentComponent },
-  { path: '**', redirectTo: '/', pathMatch: 'full' }
+  
   
 
 

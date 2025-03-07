@@ -26,8 +26,8 @@
     opacity: 0;
 }
 
-.showContactText{
-animation: ContactText 2s ease-in-out forwards;
+.showContactText {
+    animation: ContactText 2s ease-in-out forwards;
 }
 
 @keyframes ContactText {
@@ -120,30 +120,41 @@ animation: ContactText 2s ease-in-out forwards;
         }
 
         & div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #ffffff;
-            width: 188px;
-            height: 129px;
-            flex-shrink: 0;
-            border-radius: 16px;
+            content: url("../../assets/img/ArrowRightDot.png");            
+            width: 60px;
+            height: 60px;
             position: absolute;
-            padding: 8px;
-            top: -150px;
-            left: 0px;
+            bottom: 0;
+            right: 0;
+            object-fit: cover;
 
-            & p {
-                font-family: 'karla', 'openSans', 'timesNewRoman';
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 19.2px;
-                letter-spacing: 0;
-                color: #3dcfb6;
-                
-            }
+            animation: arrowContact 1s ease-in-out infinite;
 
         }
+    }
+}
+
+@keyframes arrowContact {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes arrowContactSmall{
+    0% {
+        transform: translateY(0) rotate(90deg);
+    }
+    50% {
+        transform: translateY(10px)rotate(90deg);
+    }
+    100% {
+        transform: translateY(0)rotate(90deg);
     }
 }
 
@@ -158,8 +169,8 @@ animation: ContactText 2s ease-in-out forwards;
 }
 
 
-.showContactForm{
-animation: ContactForm 2s ease-in-out forwards; 
+.showContactForm {
+    animation: ContactForm 2s ease-in-out forwards;
 }
 
 @keyframes ContactForm {
@@ -305,7 +316,7 @@ animation: ContactForm 2s ease-in-out forwards;
         font-size: 15px;
         line-height: 18px;
         letter-spacing: -3%;
-        cursor: default;
+        cursor: pointer;
 
         &:hover {
             color: #ffffff;
@@ -412,6 +423,13 @@ animation: ContactForm 2s ease-in-out forwards;
     }
 }
 
+.checkbox-label{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
 .btn-form:disabled {
     background-color: #1c1c1c;
     color: rgba(255, 255, 255, 0.5);
@@ -467,6 +485,18 @@ animation: ContactForm 2s ease-in-out forwards;
         height: 100%;
         padding-bottom: 60px;
     }
+.contact-me-line{
+    & span{
+        & div {
+            right: 200px;
+            bottom: -50px;
+            content: url('../../assets/img/ArrowRightDot.png');          
+            animation: arrowContactSmall 1s ease-in-out infinite;
+
+        }
+    }
+}
+
 }
 
 
@@ -566,7 +596,13 @@ animation: ContactForm 2s ease-in-out forwards;
         gap: 40px;
     }
 
-
+    .checkbox-area{
+        & p{
+            font-size: 16px !important;
+        }
+    }
+        
+    
 }
 
 @media screen and (max-width: 400px) {
@@ -597,3 +633,4 @@ animation: ContactForm 2s ease-in-out forwards;
     }
 
 }
+

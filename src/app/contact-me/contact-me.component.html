@@ -103,7 +103,8 @@
         </div>
         <div class="checkbox-container" [ngClass]="{'checkbox-container-de': mainVariableService.activeDE}">
           <div class="checkbox-content">
-            <input class="checkbox-input" type="checkbox" [formControl]="checkboxControl">
+            <label for="checkbox" class="checkbox-label">
+            <input class="checkbox-input" type="checkbox" id="checkbox" [formControl]="checkboxControl">
             <span class="checkbox-area">
               @if(mainVariableService.activeEN){
               <p>I've read the</p>
@@ -116,6 +117,7 @@
               }
 
             </span>
+          </label>
           </div>
           @if(!checkboxControl.value && checkboxControl.touched){
           <span class="error-checkbox">@if(mainVariableService.activeEN){Please accept the privacy policy

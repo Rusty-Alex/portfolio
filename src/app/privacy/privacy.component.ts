@@ -12,7 +12,5 @@ import { NavComponent } from '../shared/header/nav/nav.component';
 export class PrivacyComponent {
 
   constructor(public mainVariableService: MainVariableService) { }
-  ngOnInit() {
-    this.mainVariableService.redirectToHome();
-  }
+  
 }

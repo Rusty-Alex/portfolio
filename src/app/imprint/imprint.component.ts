@@ -14,7 +14,5 @@ export class ImprintComponent {
   constructor(public mainVariableService: MainVariableService) { }
 
   
-  ngOnInit() {
-    this.mainVariableService.redirectToHome();
-  }
+  
 }
