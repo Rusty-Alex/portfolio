@@ -25,7 +25,7 @@ export class colleaguesSaysComponent {
         englishSay: "I had the good fortune to work with Alexander in a group project at the Developer Akademie that involved a lot of effort. He always stayed calm, cool, and focused and made sure our team was set up for success. He was super knowledgeable, easy to work with, and I'd happily work with him again given the chance.",
         germanSay: "Ich hatte das Glück, mit Alexander in einem Gruppenprojekt an der Developer Akademie zusammenzuarbeiten, das mit viel Aufwand verbunden war. Er blieb immer ruhig, cool und fokussiert und stellte sicher, dass unser Team für den Erfolg gerüstet war. Er war super sachkundig, es war einfach mit ihm zu arbeiten und ich würde gerne wieder mit ihm zusammenarbeiten, wenn ich die Chance dazu hätte.",
         name: "G.Singh",
-        team: "Developer Akademie"
+        team: "Team Partner"
       },
       {
         englishSay: "Our project benefited enormously from Alexander's way of working.",

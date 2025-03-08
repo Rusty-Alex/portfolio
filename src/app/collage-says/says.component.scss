@@ -239,14 +239,9 @@ button {
   width: 100%;
   height: 40px;
 
-  & span:nth-of-type(1) {
-    width: 60%;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-
+  
   & span:nth-of-type(2) {
-    width: 40%;
+    width: 100%;
 
     font-family: 'karla', 'openSans', 'timesNewRoman';
     font-size: 16px;
@@ -310,7 +305,7 @@ button {
     min-height: 360px;
     height: auto;
     width: 95%;
-    padding: 40px 40px 0 40px;
+    padding: 40px 40px 10px 40px;
 
     
 
@@ -335,7 +330,7 @@ button {
     padding-right: 10px;
   }
 
-
+ 
 }
 
 @media screen and (max-width: 484px) {

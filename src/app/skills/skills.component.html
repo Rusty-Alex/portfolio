@@ -1,33 +1,30 @@
 <div class="skill" id="skills">
     <section class="header">
         <div class="skill-area">
-            <div class="skill-text" [class.showSkillText]="checkComponentActiveService.skillsActive" >
+            <div class="skill-text" [class.showSkillText]="checkComponentActiveService.skillsActive">
                 @if(mainVariableService.activeEN){
                 <p>Technologies</p>
                 <div class="skill-text-content">
                     <p>Skill Set</p>
-                    <p>My journey has involved working on diverse projects, employing a range of frontend technologies
-                        and
-                        concepts. I am open to embracing new technologies and methodologies to continously enhance my
-                        skills and
-                        stay ahead in the ever-evolving landscape of web development.</p>
+                    <p>Along the way, I have worked on various projects, gaining extensive experience with front-end
+                        technologies and concepts. I am always open to new technologies and methods in order to
+                        continuously expand my skills and keep my finger on the pulse in the dynamic world of web
+                        development.</p>
                     <div>
                         <p>You need <span>another skill?</span></p>
                         <p>Feel free to contact me. I look forward to expanding on my previous knowledge.</p>
                     </div>
-                    <a (click)="mainVariableService.scrollTo('contact')"class="btn-skill"><span>Let's Talk</span></a>
+                    <a (click)="mainVariableService.scrollTo('contact')" class="btn-skill"><span>Let's Talk</span></a>
                 </div>
 
                 }@else {
                 <p>Technologien</p>
                 <div class="skill-text-content">
-                    <p>Fertigkeiten</p>
-                    <p>Auf meinem Weg habe ich an verschiedenen Projekten gearbeitet und dabei eine Reihe von
-                        Frontend-Technologien und
-                        Konzepte. Ich bin offen für neue Technologien und Methoden, um meine Fähigkeiten kontinuierlich
-                        zu
-                        verbessern und
-                        in der sich ständig weiterentwickelnden Landschaft der Webentwicklung an der Spitze zu bleiben.
+                    <p>Fähigkeiten</p>
+                    <p>Auf meinem Weg habe ich an verschiedenen Projekten gearbeitet und dabei umfassende Erfahrungen
+                        mit Frontend-Technologien und Konzepten gesammelt. Ich bin stets offen für neue Technologien und
+                        Methoden, um meine Fähigkeiten kontinuierlich zu erweitern und in der dynamischen Welt der
+                        Webentwicklung stets am Puls der Zeit zu bleiben.
                     </p>
                     <div>
                         <p>Sie benötigen<span> eine andere Fähigkeit?</span></p>
@@ -84,25 +81,25 @@
                     <img class="skill-icon-growth-img" src="./img/GrowthMindset.png" alt="">
                     <p>Growth mindset</p>
                     @if(mainVariableService.hoverGrowthMindset){
-                    <div class="skill-icon-last">                       
-                            @if(mainVariableService.activeEN){
-                            <p>I have a special interest in learning</p>
-                            }@else {
-                            <p>Ich habe ein besonderes Interesse am lernen</p>
-                            }
-                            <div class="icon-skill">
-                                <div class="skill-icon-text">
-                                    <img class="skill-icon-last-img" src="./img/React.png" alt="">
-                                    <p>React</p>
-                                </div>
-                                <div class="skill-icon-text">
-                                    <img class="skill-icon-last-img" src="./img/VueJs.png" alt="">
-                                    <p>Vue js</p>
-                                </div>
-
+                    <div class="skill-icon-last">
+                        @if(mainVariableService.activeEN){
+                        <p>I have a special interest in learning</p>
+                        }@else {
+                        <p>Ich habe ein besonderes Interesse am lernen</p>
+                        }
+                        <div class="icon-skill">
+                            <div class="skill-icon-text">
+                                <img class="skill-icon-last-img" src="./img/React.png" alt="">
+                                <p>React</p>
                             </div>
-                            <img class="skill-icon-last-line" src="./img/Vector.png" alt="">
-                        </div>                    
+                            <div class="skill-icon-text">
+                                <img class="skill-icon-last-img" src="./img/VueJs.png" alt="">
+                                <p>Vue js</p>
+                            </div>
+
+                        </div>
+                        <img class="skill-icon-last-line" src="./img/Vector.png" alt="">
+                    </div>
                     }
                 </div>
 
