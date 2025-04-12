@@ -8,8 +8,8 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class MainVariableService {
-  public activeEN: boolean = true;
-  public activeDE: boolean = false;
+  public activeEN: boolean = false;
+  public activeDE: boolean = true;
   public isSmallScreen: boolean = false;
   public isMediumScreen: boolean = false;
   public movemouse: boolean = false;

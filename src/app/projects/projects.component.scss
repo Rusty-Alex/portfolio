@@ -290,6 +290,12 @@
     }
 }
 
+@media screen and (max-width: 1040px) {
+    .header {
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 1000px) {
 
     .header {

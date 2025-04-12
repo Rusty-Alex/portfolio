@@ -468,12 +468,12 @@ html{
 @media screen and (max-width: 450px) and (max-height: 932px)  {
    
     .header{
-        height:calc(100vh ) ;
+        height:calc(100dvh) ;
         
     }
 
     .header-line{
-        bottom: 0px;
+        bottom: -10px;
     }
 
    
