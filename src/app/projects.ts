@@ -6,6 +6,7 @@ export interface Projects {
   title: string;   
   github:string;
   liveTest:string;
+  online:boolean;
 }
 
 export interface Says {
