@@ -7,9 +7,15 @@
         @if(mainVariableService.activeEN){
         <p>What is this project about?</p>
         <p>{{projects[index].englishDescription}}</p>
+        @if(!projects[index].online){
+        <p>The live test is currently not available</p>
+        }
         }@else {
         <p>Worum geht es bei diesem Projekt?</p>
         <p>{{projects[index].germanDescription}}</p>
+        @if(!projects[index].online){
+        <p>Der Live Test ist momentan nicht verfügbar</p>
+        }
         }
 
         <div class="dialog-project-skills-info">
