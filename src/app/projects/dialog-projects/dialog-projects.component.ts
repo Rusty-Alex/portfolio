@@ -66,7 +66,7 @@ export class DialogProjectsComponent {
       germanDescription: 'Diese App ist ein Slack Clone App. Es revolutioniert die Team-Kommunikation und die Zusammenarbeit mit seiner intuitiven Schnittstelle, Echtzeit-Messaging, und robuste Kanalorganisation.',
       englishDescription: 'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.',
       github: 'https://github.com/Alumni-Projects/SlackClone',
-      liveTest: 'test1.de',
+      liveTest: 'https://alumni-projects.github.io/SlackClone',
       online: false
     },
 
